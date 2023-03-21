@@ -1,0 +1,45 @@
+.form {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 7px 7px 20px;
+    width: 100%;
+}
+
+.input {
+    padding: 14px 24px;
+    border: none;
+    color: #11175e;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 110%;
+    outline: none;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #B1BACB;
+    font-family: sans-serif;
+}
+
+.btn {
+    background: #2d70fd;
+    border: 1px solid #2d70fd;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .1em;
+    line-height: 110%;
+    padding: 12px 24px;
+    text-align: center;
+}

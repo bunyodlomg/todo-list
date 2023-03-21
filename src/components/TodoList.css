@@ -1,0 +1,47 @@
+.list {
+    align-items: start;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list-item {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-item:hover p {
+    cursor: pointer;
+    color: blue;
+}
+
+.list-item:hover .circle {
+    border-color: rgb(183, 183, 196);
+}
+
+.item-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+}
+
+.circle {
+    border: 1px solid #eee;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.select {
+    width: 32px;
+    height: 32px;
+}
+
+.delete-btn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
