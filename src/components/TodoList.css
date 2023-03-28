@@ -41,7 +41,15 @@
 }
 
 .delete-btn {
+    margin-left: auto;
     background-color: inherit;
     border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    border: none;
+    outline: none;
+    background-color: inherit;
     cursor: pointer;
 }

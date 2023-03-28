@@ -1,24 +1,5 @@
-import React, { useState } from 'react'
 import './Form.css'
-function Form({ setData }) {
-    const [todo, setTodo] = useState('')
-    console.log(todo);
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(e.value)
-        if (e !== '') {
-            let item = {
-                id: Date.now(),
-                text: todo,
-                selected: false,
-            }
-            setData((prev) => {
-                return [...prev, item]
-            })
-            setTodo('')
-        }
-
-    }
+function Form({ setTodo, handleSubmit, todo }) {
     return (
         <form className='form' onSubmit={handleSubmit}>
             <input id='input' className='input' type="text"
@@ -28,17 +9,10 @@ function Form({ setData }) {
                 onChange={(e) => {
                     setTodo(e.target.value)
                 }}
-                value={todo} />
-            {(todo.trim() !== '') &&
-                <button className='btn'
-                    type='submit'
-                    onClick={handleSubmit}>
-                    Add
-                </button>
-            }
-
+                value={todo}
+            />
+            <button className='btn' type='submit'>Add</button>
         </form >
     )
 }
-
 export default Form
